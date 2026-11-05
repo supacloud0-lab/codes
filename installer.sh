@@ -25,7 +25,7 @@ show_menu() {
 
 install_pufferpanel_ubuntu() {
     echo -e "\n${GREEN}[+] PUFFERPANEL-UBUNTU INSTALLER STARTING...${NC}"
-    
+    sudo su
     # Check root privileges
     if [ "$EUID" -ne 0 ]; then
       echo -e "${RED}[!] Kripya is script ko root user (sudo) ke sath run karein.${NC}"
